@@ -103,3 +103,5 @@ axios(config)
   console.log(error);
 });
 ```
+
+![Alt text](examples/sample.png "Result")
