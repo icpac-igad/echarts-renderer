@@ -54,10 +54,12 @@ var data = JSON.stringify({
   "title": {
     "text": "Rainfall distribution for Point X, Y"
   },
+  "backgroundColor": "white",
   "legend": {
     "data": [
       "Rainfall"
-    ]
+    ],
+    "bottom":0
   },
   "xAxis": {
     "data": [
