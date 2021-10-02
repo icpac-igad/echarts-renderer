@@ -1,0 +1,8 @@
+{
+    "logger": {
+        "name": "echarts-renderer",
+        "level": "debug",
+        "toFile": false,
+        "dirLogFile": null
+    }
+}

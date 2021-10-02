@@ -1,0 +1,31 @@
+{
+    "name": "echarts-renderer",
+    "version": "1.0.0",
+    "main": "index.js",
+    "author": "Erick Otenyo",
+    "license": "MIT",
+    "scripts": {
+        "start": "NODE_PATH=app/src node app/index.js",
+        "dev": "NODE_PATH=app/src nodemon app/index.js"
+    },
+    "dependencies": {
+        "@koa/cors": "^3.1.0",
+        "bunyan": "^1.8.15",
+        "canvas": "^2.8.0",
+        "config": "^3.3.6",
+        "echarts": "^5.2.1",
+        "jsdom": "^17.0.0",
+        "koa": "^2.13.3",
+        "koa-bodyparser": "^4.3.0",
+        "koa-logger": "^3.2.1",
+        "koa-mount": "^4.0.0",
+        "koa-router": "^10.1.1",
+        "koa-simple-healthcheck": "^0.0.1"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.13"
+    },
+    "engines": {
+        "node": ">12"
+    }
+}
