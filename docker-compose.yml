@@ -1,0 +1,11 @@
+version: '3.0'
+
+services:
+  echarts_renderer:
+    image: "eahazardswatch.icpac.net/echarts-renderer"
+    build: .
+    environment:
+      - PORT=3000
+    restart: ${RESTART_POLICY}
+    ports:
+      - ${PORT}:3000
