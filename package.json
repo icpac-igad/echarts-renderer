@@ -11,7 +11,7 @@
     "dependencies": {
         "@koa/cors": "^3.1.0",
         "bunyan": "^1.8.15",
-        "canvas": "^2.8.0",
+        "canvas": "^2.9.0",
         "config": "^3.3.6",
         "echarts": "^5.2.1",
         "jsdom": "^17.0.0",
