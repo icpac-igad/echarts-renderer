@@ -4,5 +4,9 @@
         "level": "debug",
         "toFile": false,
         "dirLogFile": null
+    },
+    "echarts": {
+        "defaultWidth": 600,
+        "defaultHeight": 400
     }
 }

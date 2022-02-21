@@ -1,12 +1,10 @@
+const config = require("config");
 const Router = require("koa-router");
 const EchartsRenderService = require("services/echartsRenderService");
 
-const router = new Router({
-  prefix: "/echarts",
-});
+const router = new Router();
 
 const MAX_DIMENSION_VAL = 1000;
-
 class EchartsRenderRouter {
   static async renderEcharts(ctx) {
     ctx.assert(ctx.query.width, 400, "width url parameter required");

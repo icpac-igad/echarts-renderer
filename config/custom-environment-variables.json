@@ -1,0 +1,9 @@
+{
+    "logger": {
+        "level": "LOG_LEVEL"
+    },
+    "echarts": {
+        "defaultWidth": "ECHARTS_DEFAULT_WIDTH",
+        "defaultHeight": "ECHARTS_DEFAULT_HEIGHT"
+    }
+}

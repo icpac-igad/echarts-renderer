@@ -5,6 +5,9 @@ services:
     image: "eahazardswatch.icpac.net/echarts-renderer"
     build: .
     environment:
+      - LOG_LEVEL=${LOG_LEVEL}
+      - ECHARTS_DEFAULT_WIDTH=${ECHARTS_DEFAULT_WIDTH}
+      - ECHARTS_DEFAULT_HEIGHT=${ECHARTS_DEFAULT_HEIGHT}
       - PORT=3000
     restart: ${RESTART_POLICY}
     ports:
