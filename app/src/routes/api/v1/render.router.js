@@ -5,13 +5,13 @@ const EchartsRenderService = require("services/echartsRenderService");
 const router = new Router();
 
 const MAX_DIMENSION_VAL = 1000;
+
+const echartsConfig = config.get("echarts");
 class EchartsRenderRouter {
   static async renderEcharts(ctx) {
-    ctx.assert(ctx.query.width, 400, "width url parameter required");
-    ctx.assert(ctx.query.height, 400, "height url parameter required");
-
-    let width = parseInt(Number(ctx.query.width));
-    let height = parseInt(Number(ctx.query.height));
+    let width = parseInt(Number(ctx.query.width)) || echartsConfig.defaultWidth;
+    let height =
+      parseInt(Number(ctx.query.height)) || echartsConfig.defaultHeight;
 
     // do validation
     if (isNaN(width)) {
