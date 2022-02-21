@@ -9,9 +9,11 @@ const MAX_DIMENSION_VAL = 1000;
 const echartsConfig = config.get("echarts");
 class EchartsRenderRouter {
   static async renderEcharts(ctx) {
-    let width = parseInt(Number(ctx.query.width)) || echartsConfig.defaultWidth;
+    let width =
+      parseInt(Number(ctx.query.width)) || parseInt(echartsConfig.defaultWidth);
     let height =
-      parseInt(Number(ctx.query.height)) || echartsConfig.defaultHeight;
+      parseInt(Number(ctx.query.height)) ||
+      parseInt(echartsConfig.defaultHeight);
 
     // do validation
     if (isNaN(width)) {
